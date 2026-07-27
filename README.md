@@ -15,14 +15,14 @@
 
 ---
 
-- 🔭 Currently building a **real-time telemetry platform** — Redis Streams ingestion, WebSocket fan-out with backpressure, deployed on AWS
-- 🌱 Learning more about **distributed systems, database internals, and observability**
-- 💬 Ask me about **FastAPI, Redis Streams, WebSockets, or load-testing anything**
-- 📫 Reach me at **colinkthomas110@gmail.com**
+-  Currently building a **real-time telemetry platform** — Redis Streams ingestion, WebSocket fan-out with backpressure, deployed on AWS
+-  Learning more about **distributed systems, database internals, and observability**
+-  Ask me about **FastAPI, Redis Streams, WebSockets, or load-testing anything**
+-  Reach me at **colinkthomas110@gmail.com**
 
 ---
 
-### 🚀 Featured Project
+###  Featured Project
 
 **[Distributed Fleet Telemetry Platform](https://github.com/colin-110/robot-fleet-platform)**
 
