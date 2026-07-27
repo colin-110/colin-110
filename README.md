@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Colin K Thomas</h1>
-<h3 align="center">Backend & distributed systems · CS @ VIT Chennai</h3>
+<h3 align="center">Software engineer · CS @ VIT Chennai · Backend, distributed systems, full-stack</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/colinkthomas" target="_blank">
