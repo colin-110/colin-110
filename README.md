@@ -1,18 +1,10 @@
 # Colin K Thomas
 
-Computer Science student at VIT Chennai focused on backend engineering, distributed systems, and AI applications.
+**Backend Engineer | Python | FastAPI | PostgreSQL | Redis**
 
-I build backend services with Python and FastAPI, work with relational and in-memory data systems, and enjoy solving problems involving concurrency, real-time systems, and retrieval pipelines.
+Computer Science student at VIT Chennai building backend applications with Python.
 
-## What I Work On
-
-- **Backend:** Python, FastAPI, REST APIs, asynchronous services
-- **Data:** PostgreSQL, Redis, SQL
-- **Systems:** WebSockets, event-driven processing, caching, background workers
-- **AI:** LLM applications, document retrieval, semantic caching
-- **Engineering:** Docker, AWS, GitHub Actions, Pytest
-
-## Featured Projects
+## Projects
 
 ### [FleetOps](https://github.com/colin-110/robot-fleet-platform)
 Real-time robot fleet monitoring and control platform built with FastAPI, PostgreSQL, Redis Streams, WebSockets, and React.
@@ -40,7 +32,4 @@ AI-powered meeting transcription and analysis application built with FastAPI and
 
 ## Links
 
-- [GitHub](https://github.com/colin-110)
-- [LinkedIn](https://www.linkedin.com/in/colinkthomas)
-- [LeetCode](https://leetcode.com/u/OKTRBpaERN)
-- [Email](mailto:colinkthomas110@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/colinkthomas) · [LeetCode](https://leetcode.com/u/OKTRBpaERN) · [Email](mailto:colinkthomas110@gmail.com)
