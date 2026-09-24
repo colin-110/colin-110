@@ -1,14 +1,8 @@
 # Colin K Thomas
 
-**Backend / Systems Engineering | Python | FastAPI | PostgreSQL | Redis**
+**Computer Science Student @ VIT Chennai | Backend Development | Python | FastAPI | PostgreSQL | Redis**
 
-Computer Science student at VIT Chennai building backend systems, data-intensive services, and real-time applications.
-
-I care about:
-- asynchronous processing and concurrency
-- reliable APIs and background workers
-- database correctness and caching
-- observability, testing, and measurable performance
+I build backend applications and data-intensive services, with a focus on asynchronous processing, APIs, databases, caching, testing, and measurable performance.
 
 ## Featured projects
 
