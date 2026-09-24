@@ -2,47 +2,63 @@
 
 **Backend / Systems Engineering | Python | FastAPI | PostgreSQL | Redis**
 
-Computer Science student at VIT Chennai focused on backend systems, APIs, data-intensive services, concurrency, and distributed systems.
+Computer Science student at VIT Chennai building backend systems, data-intensive services, and real-time applications.
 
-I build backend software with an emphasis on clear service boundaries, asynchronous processing, database correctness, observability, testing, and measurable performance.
+I care about:
+- asynchronous processing and concurrency
+- reliable APIs and background workers
+- database correctness and caching
+- observability, testing, and measurable performance
 
-## Selected projects
+## Featured projects
 
 ### [FleetOps](https://github.com/colin-110/robot-fleet-platform)
-Real-time robot fleet monitoring and control platform using FastAPI, PostgreSQL, Redis Streams, and WebSockets.
+**Real-time robot fleet monitoring and control**
 
-- Decoupled telemetry ingestion from PostgreSQL persistence with Redis Streams and worker-based batching
-- Built bounded WebSocket fan-out so slow clients do not block the fleet
-- Implemented idempotent command handling with atomic compare-and-set updates
-- Added JWT roles, short-lived WebSocket console tickets, structured logging, and Prometheus/Grafana
+FastAPI + Redis Streams + PostgreSQL + WebSockets
+
+- Decoupled telemetry ingestion from database persistence with asynchronous workers
+- Added bounded WebSocket fan-out so slow clients do not block the fleet
+- Implemented idempotent command handling, RBAC, structured logging, and correlation IDs
 - Measured telemetry ingest p99 from **1,271 ms to 158 ms**
+- Load-tested to about **2,000 concurrent WebSocket clients** and **15K–18K messages/s** on a single node
 
 ### [Lumen](https://github.com/colin-110/lumen)
-Self-hosted document assistant focused on retrieval quality and backend infrastructure.
+**Self-hosted document retrieval and RAG platform**
+
+FastAPI + PostgreSQL + Redis + Qdrant + Celery + LLM APIs
 
 - Hybrid dense + BM25 retrieval with Reciprocal Rank Fusion and cross-encoder reranking
-- Redis/Qdrant semantic caching and SSE response streaming
-- Celery-based asynchronous document ingestion with OCR fallback
-- JWT authentication and organization-level document isolation
+- Semantic caching and SSE streaming for lower latency
+- Asynchronous document ingestion with OCR fallback
+- Organization-level document isolation and multi-provider LLM fallback
 - Retrieval evaluation with Recall@k, MRR, and NDCG
 
 ### [Meeting Summarizer](https://github.com/colin-110/meeting-summarizer)
-FastAPI service for asynchronous meeting transcription and structured analysis.
+**Asynchronous meeting intelligence pipeline**
 
-- Background audio processing with FastAPI
-- Content-hash deduplication and input validation
-- Explicit handling of provider failures, retries, malformed output, and server restarts
-- Golden-dataset evaluation for transcription and extraction quality
-- Automated testing with GitHub Actions
+FastAPI + Whisper + LLMs + Pytest + GitHub Actions
 
-## What I work with
+- Background processing for transcription and structured extraction
+- Content-hash deduplication and layered file validation
+- Explicit handling of provider failures, retries, malformed outputs, and restarts
+- Reproducible evaluation pipeline for transcription and extraction quality
+- Documented evaluation results including **~1.8% WER**, **18/18** decision recall, and **21/21** action-item recall
 
-**Backend:** Python, FastAPI, SQLAlchemy, REST APIs  
-**Data:** PostgreSQL, SQLite, Redis  
-**Systems:** asynchronous workers, queues/streams, WebSockets, caching, concurrency  
-**Infrastructure:** Docker, GitHub Actions, Prometheus, Grafana, AWS  
-**Other:** C++, Java, React
+## Technical focus
+
+**Languages:** Python, C++, Java, SQL
+
+**Backend:** FastAPI, REST APIs, WebSockets, SQLAlchemy
+
+**Data:** PostgreSQL, Redis, Qdrant, SQLite
+
+**Systems:** async workers, queues/streams, caching, concurrency
+
+**Infrastructure:** Docker, AWS, GitHub Actions, Prometheus, Grafana
+
+**AI:** LLM APIs, RAG, hybrid retrieval, reranking
 
 ## Links
 
-[LinkedIn](https://www.linkedin.com/in/colinkthomas) · [LeetCode](https://leetcode.com/u/OKTRBpaERN) · [Email](mailto:colinkthomas110@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/colinkthomas) · [LeetCode](https://leetcode.com/u/OKTRBpaERN)
