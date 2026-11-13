@@ -12,11 +12,23 @@ Lately I've been working closer to the hardware: a boat that collects water hyac
 
 ## Water hyacinth collection boat
 
+<table>
+<tr>
+<td width="70%" valign="top">
+
 An autonomous boat that detects floating water hyacinth with a camera and collects it from ponds. It was a college-funded team project (₹30,000), and I designed, built, programmed and tested it in a pond in October 2026.
 
 A patent application is being prepared, so the code and design aren't public yet.
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/Computer_vision-5C3EE8?style=flat-square" alt="Computer vision">
+
+</td>
+<td width="30%" valign="top" align="center">
+  <img src="assets/screens/hyacinth-boat-pond.jpg" width="200" alt="The boat on a pond during testing">
+  <br><sub>Pond test, October 2026</sub>
+</td>
+</tr>
+</table>
 
 ## Currently working on
 
