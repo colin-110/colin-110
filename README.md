@@ -102,7 +102,7 @@ Turns a meeting recording into a transcript, a summary, decisions and action ite
 ### [Papercut](https://github.com/colin-110/papercut)
 <a href="https://colin-110-papercut.vercel.app"><img src="assets/screens/papercut.jpg" alt="Papercut photo to PDF converter"></a>
 
-Converts photos to PDFs and PDFs to images, entirely in the browser. There's no upload API or processing backend: files are read and converted locally with PDF.js, pdf-lib and Canvas, then downloaded straight from the tab.
+I built this for friends who aren't technical and needed to turn photos into PDFs, and they still use it. It converts photos to PDFs and PDFs to images entirely in the browser. There's no upload API or processing backend: files are read and converted locally with PDF.js, pdf-lib and Canvas, then downloaded straight from the tab.
 
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"> <img src="https://img.shields.io/badge/PDF.js-F43F5E?style=flat-square" alt="PDF.js">
 
