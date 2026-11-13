@@ -6,11 +6,13 @@
 
 I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I like to cause those failures on purpose and write down what I measured.
 
-Lately I've been working closer to the hardware: a boat that collects water hyacinth from ponds, and [linuxcru](https://github.com/colin-110/linux-cru), which started because my laptop's panel is sold as 60 Hz but runs fine at 96.
+Lately I've been working closer to the hardware: a boat that collects water hyacinth from ponds, a self-levelling platform on a line-following robot, and [linuxcru](https://github.com/colin-110/linux-cru), which started because my laptop's panel is sold as 60 Hz but runs fine at 96.
 
 <img src="assets/numbers.svg" width="100%" alt="60 to 96 Hz with linuxcru; 0 readings lost in FleetOps chaos tests; 98% Recall@5 in Lumen; notes 14.8 s after stopping in Meeting Summarizer; 1,000 robots on about 40% of one core; 17 of 20 chart pages without paid vision calls">
 
-## Water hyacinth collection boat
+## Robotics
+
+### Water hyacinth collection boat
 
 <table>
 <tr>
@@ -29,6 +31,14 @@ A patent application is being prepared, so the code and design aren't public yet
 </td>
 </tr>
 </table>
+
+### [Self-levelling platform on a line-following robot](https://github.com/colin-110/esp32-self-levelling-platform)
+
+A line-following robot with a servo-mounted platform on top that stays level while it drives, with the ESP32 running each job on its own core.
+
+Instead of using PID, I wrote my own controller that steps the servo towards level in small, bounded steps, and then spent a lot of time tuning it on the real hardware. It took a four-stage filter on the tilt signal, a cap on each servo step and a check that stops correcting once the angle settles before the platform stopped hunting back and forth. I also built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) to compare. PID corrected faster, but my controller held the platform level too.
+
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS"> <img src="https://img.shields.io/badge/MPU6500-6D28D9?style=flat-square" alt="MPU6500">
 
 ## Currently working on
 
@@ -118,21 +128,6 @@ Converts photos to PDFs and PDFs to images, entirely in the browser. There's no 
 Extracts facts from PDFs, links each one to the page it came from and flags when two reports disagree. Plain code normalizes currencies and periods, rules settle the clear cases, and only ambiguous pairs go to an LLM.
 
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/Chroma-FF6446?style=flat-square" alt="Chroma"> <img src="https://img.shields.io/badge/PyMuPDF-8B5CF6?style=flat-square" alt="PyMuPDF">
-
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-
-### [Self-levelling platform on a line-following robot](https://github.com/colin-110/esp32-self-levelling-platform)
-
-A line-following robot with a servo-mounted platform on top that stays level while the robot drives. The ESP32 runs the line follower on one core and the platform controller on the other.
-
-Instead of PID, I wrote a controller that searches for the level position: it steps the servo towards zero tilt in small, bounded steps and stops inside a 0.3° deadband. Most of the work was tuning it on the real hardware. To make the platform settle without hunting back and forth, I added a four-stage filter on the tilt signal (exponential smoothing, then a 7-sample median blended with a moving average), a cap on how far the servo can move in one step, and a check that stops correcting once the angle has settled.
-
-To compare, I built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) whose gains, bias and filter could be changed over serial while it ran. PID reacted and corrected faster. The search method was slower, but it held the platform level too.
-
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS"> <img src="https://img.shields.io/badge/MPU6500-6D28D9?style=flat-square" alt="MPU6500">
 
 </td>
 </tr>
