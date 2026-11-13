@@ -1,7 +1,7 @@
 <img src="assets/banner.svg" width="100%" alt="Colin K Thomas. I build backends that survive kill -9, and Linux tools that make 60 Hz screens run at 96.">
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/colinkthomas"><img src="https://img.shields.io/badge/LinkedIn-colinkthomas-0A66C2?style=flat-square" alt="LinkedIn"></a> <a href="https://leetcode.com/u/OKTRBpaERN"><img src="https://img.shields.io/badge/LeetCode-profile-FFA116?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode"></a> <img src="https://img.shields.io/badge/Chennai-India-22C55E?style=flat-square" alt="Chennai, India">
+  <a href="https://www.linkedin.com/in/colin-k-thomas"><img src="https://img.shields.io/badge/LinkedIn-colin--k--thomas-0A66C2?style=flat-square" alt="LinkedIn"></a> <img src="https://img.shields.io/badge/Chennai-India-22C55E?style=flat-square" alt="Chennai, India">
 </p>
 
 I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I like to cause those failures on purpose and write down what I measured.
@@ -149,4 +149,4 @@ Instead of using PID, I wrote my own controller that steps the servo towards lev
 
 ---
 
-I'm looking for a software engineering internship. The easiest way to reach me is [LinkedIn](https://www.linkedin.com/in/colinkthomas).
+I'm looking for a software engineering internship. The easiest way to reach me is [LinkedIn](https://www.linkedin.com/in/colin-k-thomas).
