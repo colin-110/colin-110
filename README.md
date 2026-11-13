@@ -90,7 +90,7 @@ Extracts facts from PDFs, links each one to the page it came from and flags when
 
 ## Other things I've built
 
-- [PID-free stabilization robot](https://github.com/colin-110/custom-pid-free-stabilization-robot): a balancing robot on an ESP32, with adaptive control and dual-core FreeRTOS tasks
+- [Self-levelling platform on a line-following robot](https://github.com/colin-110/custom-pid-free-stabilization-robot): an ESP32 follows the line on one core and keeps a servo-mounted platform level on the other. Instead of PID, I wrote a controller that searches for the level position in small, bounded steps, and built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) to compare. PID reacted and corrected faster, but the search method held the platform level too.
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
 - [Papercut](https://github.com/colin-110/papercut): converts between images and PDFs in the browser, without uploading anything
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
@@ -103,4 +103,4 @@ Extracts facts from PDFs, links each one to the page it came from and flags when
 
 ---
 
-I'm looking for software engineering internships and full-time roles. The easiest way to reach me is [LinkedIn](https://www.linkedin.com/in/colinkthomas).
+I'm looking for a software engineering internship. The easiest way to reach me is [LinkedIn](https://www.linkedin.com/in/colinkthomas).
