@@ -140,7 +140,23 @@ Instead of using PID, I wrote my own controller that steps the servo towards lev
 
 ## Other things I've built
 
-- [NeetCode and LeetCode sync checker](https://github.com/colin-110/neetcode_leetcode_syncer): a Chrome extension that highlights problems I've already solved on LeetCode but haven't ticked off on NeetCode. I use it most days when I practise.
+<table>
+<tr>
+<td width="45%" valign="top">
+
+**[NeetCode and LeetCode sync checker](https://github.com/colin-110/neetcode_leetcode_syncer)**
+
+A Chrome extension that compares my NeetCode checklist with my accepted LeetCode submissions and highlights problems I've ticked off on NeetCode but never actually solved on LeetCode. I use it most days when I practise.
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/Chrome_extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome extension">
+
+</td>
+<td width="55%" valign="middle">
+  <img src="assets/screens/neetcode-sync-checker.png" alt="A NeetCode problem ticked as solved but with no accepted LeetCode submission, highlighted in red">
+</td>
+</tr>
+</table>
+
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
 
