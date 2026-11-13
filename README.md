@@ -42,7 +42,7 @@ Only a small helper runs as root, and the installer is tested against a fake fil
 <td width="50%" valign="top">
 
 ### [FleetOps](https://github.com/colin-110/robot-fleet-platform)
-<a href="https://robot-fleet-platform.vercel.app"><img src="https://raw.githubusercontent.com/colin-110/robot-fleet-platform/main/docs/images/dashboard-overview.png" alt="FleetOps dashboard"></a>
+<a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps live dashboard with 20 robots on the map"></a>
 
 Monitoring and control for a robot fleet: a live map, alarms and commands. Readings are acknowledged only after they're committed, and each robot keeps an on-disk outbox until the server confirms. The robots and the server run the same predictor, so robots send 55% fewer messages.
 
@@ -54,7 +54,7 @@ Monitoring and control for a robot fleet: a live map, alarms and commands. Readi
 <td width="50%" valign="top">
 
 ### [Lumen](https://github.com/colin-110/lumen)
-<a href="https://lumen-three-nu.vercel.app"><img src="https://raw.githubusercontent.com/colin-110/lumen/main/docs/screenshot-chat.png" alt="Lumen chat with a cited answer"></a>
+<a href="https://lumen-three-nu.vercel.app"><img src="assets/screens/lumen.jpg" alt="Lumen comparing an invoice with a services agreement, with citations"></a>
 
 A self-hosted document assistant that answers with citations. It uses hybrid search with ColBERT reranking, which takes 25 ms where a cross-encoder took 1.2 s. Numbers in each answer are checked against the passages they cite.
 
@@ -68,6 +68,7 @@ A self-hosted document assistant that answers with citations. It uses hybrid sea
 <td width="50%" valign="top">
 
 ### [Meeting Summarizer](https://github.com/colin-110/meeting-summarizer)
+<a href="https://meeting-summarizer-recorder.vercel.app"><img src="assets/screens/meeting-summarizer.jpg" alt="Meeting Summarizer upload and record page"></a>
 
 Turns a meeting recording into a transcript, a summary, decisions and action items. Jobs run on a SQLite queue with leases and heartbeats instead of Redis and Celery, and each one runs exactly once across worker processes. Long meetings are summarized while the recording is still going.
 
@@ -77,6 +78,20 @@ Turns a meeting recording into a transcript, a summary, decisions and action ite
 
 </td>
 <td width="50%" valign="top">
+
+### [Papercut](https://github.com/colin-110/papercut)
+<a href="https://colin-110-papercut.vercel.app"><img src="assets/screens/papercut.jpg" alt="Papercut photo to PDF converter"></a>
+
+Converts photos to PDFs and PDFs to images, entirely in the browser. There's no upload API or processing backend: files are read and converted locally with PDF.js, pdf-lib and Canvas, then downloaded straight from the tab.
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"> <img src="https://img.shields.io/badge/PDF.js-F43F5E?style=flat-square" alt="PDF.js">
+
+[Live app](https://colin-110-papercut.vercel.app)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
 
 ### [Fact Knowledge Layer](https://github.com/colin-110/fact-knowledge-layer)
 
@@ -106,7 +121,6 @@ To compare, I built a [PID version](https://github.com/colin-110/mpu6050-servo-p
 ## Other things I've built
 
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
-- [Papercut](https://github.com/colin-110/papercut): converts between images and PDFs in the browser, without uploading anything
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
 
 ## Tools
