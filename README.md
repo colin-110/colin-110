@@ -86,11 +86,25 @@ Extracts facts from PDFs, links each one to the page it came from and flags when
 
 </td>
 </tr>
+<tr>
+<td colspan="2" valign="top">
+
+### [Self-levelling platform on a line-following robot](https://github.com/colin-110/custom-pid-free-stabilization-robot)
+
+A line-following robot with a servo-mounted platform on top that stays level while the robot drives. The ESP32 runs the line follower on one core and the platform controller on the other.
+
+Instead of PID, I wrote a controller that searches for the level position: it steps the servo towards zero tilt in small, bounded steps and stops inside a 0.3° deadband. Most of the work was tuning it on the real hardware. To make the platform settle without hunting back and forth, I added a four-stage filter on the tilt signal (exponential smoothing, then a 7-sample median blended with a moving average), a cap on how far the servo can move in one step, and a check that stops correcting once the angle has settled.
+
+To compare, I built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) whose gains, bias and filter could be changed over serial while it ran. PID reacted and corrected faster. The search method was slower, but it held the platform level too.
+
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS"> <img src="https://img.shields.io/badge/MPU6500-6D28D9?style=flat-square" alt="MPU6500">
+
+</td>
+</tr>
 </table>
 
 ## Other things I've built
 
-- [Self-levelling platform on a line-following robot](https://github.com/colin-110/custom-pid-free-stabilization-robot): an ESP32 follows the line on one core and keeps a servo-mounted platform level on the other. Instead of PID, I wrote a controller that searches for the level position in small, bounded steps, and built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) to compare. PID reacted and corrected faster, but the search method held the platform level too.
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
 - [Papercut](https://github.com/colin-110/papercut): converts between images and PDFs in the browser, without uploading anything
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
