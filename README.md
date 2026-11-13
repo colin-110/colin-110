@@ -6,9 +6,17 @@
 
 I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I like to cause those failures on purpose and write down what I measured.
 
-Lately I've been working closer to the hardware. My laptop's panel is sold as 60 Hz but runs fine at 96, and getting that working properly on Linux turned into [linuxcru](https://github.com/colin-110/linux-cru).
+Lately I've been working closer to the hardware: a boat that collects water hyacinth from ponds, and [linuxcru](https://github.com/colin-110/linux-cru), which started because my laptop's panel is sold as 60 Hz but runs fine at 96.
 
 <img src="assets/numbers.svg" width="100%" alt="60 to 96 Hz with linuxcru; 0 readings lost in FleetOps chaos tests; 98% Recall@5 in Lumen; notes 14.8 s after stopping in Meeting Summarizer; 1,000 robots on about 40% of one core; 17 of 20 chart pages without paid vision calls">
+
+## Water hyacinth collection boat
+
+An autonomous boat that detects floating water hyacinth with a camera and collects it from ponds. It was a college-funded team project (₹30,000), and I designed, built, programmed and tested it in a pond in October 2026.
+
+A patent application is being prepared, so the code and design aren't public yet.
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/Computer_vision-5C3EE8?style=flat-square" alt="Computer vision">
 
 ## Currently working on
 
