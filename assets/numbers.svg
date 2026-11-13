@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="290" viewBox="0 0 860 290" role="img" aria-label="By the numbers: linuxcru took my laptop panel from 60 to 96 Hz. FleetOps lost 0 readings in kill -9 chaos tests and runs 1,000 robots on about 40% of one core. Lumen reaches 98% Recall@5 with 25 ms reranking. Meeting Summarizer has notes ready 14.8 s after stopping. Fact Knowledge Layer read 17 of 20 chart pages without paid vision calls.">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="290" viewBox="0 0 860 290" role="img" aria-label="By the numbers: linuxcru took my laptop panel from 60 to 96 Hz. My college funded an autonomous water hyacinth boat I designed and built with 30,000 rupees. Lumen reaches 98% Recall@5 with 25 ms reranking. Meeting Summarizer has notes ready 14.8 s after stopping. FleetOps lost 0 readings in kill -9 chaos tests. Fact Knowledge Layer read 17 of 20 chart pages without paid vision calls.">
   <defs>
     <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f43f5e"/><stop offset="1" stop-color="#f97316"/></linearGradient>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#d97706"/></linearGradient>
     <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
     <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#16a34a"/></linearGradient>
-    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#db2777"/></linearGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
     <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0284c7"/><stop offset="1" stop-color="#0d9488"/></linearGradient>
   </defs>
   <style>
@@ -26,10 +26,10 @@
   </g>
   <g class="tile t2">
     <rect x="294" y="0" width="272" height="135" rx="16" fill="url(#g2)"/>
-    <text x="316" y="30" class="lab">FLEETOPS</text>
-    <text x="316" y="78" class="big">0 lost</text>
-    <text x="316" y="102" class="cap">readings, after kill -9 on the robots,</text>
-    <text x="316" y="120" class="cap">the API and the broker</text>
+    <text x="316" y="30" class="lab">HYACINTH BOAT</text>
+    <text x="316" y="78" class="big">₹30,000</text>
+    <text x="316" y="102" class="cap">college funding for an autonomous</text>
+    <text x="316" y="120" class="cap">boat I designed and built</text>
   </g>
   <g class="tile t3">
     <rect x="588" y="0" width="272" height="135" rx="16" fill="url(#g3)"/>
@@ -48,9 +48,9 @@
   <g class="tile t5">
     <rect x="294" y="155" width="272" height="135" rx="16" fill="url(#g5)"/>
     <text x="316" y="185" class="lab">FLEETOPS</text>
-    <text x="316" y="233" class="big">1,000</text>
-    <text x="316" y="257" class="cap">simulated robots on about 40%</text>
-    <text x="316" y="275" class="cap">of one CPU core</text>
+    <text x="316" y="233" class="big">0 lost</text>
+    <text x="316" y="257" class="cap">readings, after kill -9 on the robots,</text>
+    <text x="316" y="275" class="cap">the API and the broker</text>
   </g>
   <g class="tile t6">
     <rect x="588" y="155" width="272" height="135" rx="16" fill="url(#g6)"/>

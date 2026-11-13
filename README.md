@@ -6,39 +6,9 @@
 
 I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I like to cause those failures on purpose and write down what I measured.
 
-Lately I've been working closer to the hardware: a boat that collects water hyacinth from ponds, a self-levelling platform on a line-following robot, and [linuxcru](https://github.com/colin-110/linux-cru), which started because my laptop's panel is sold as 60 Hz but runs fine at 96.
+Outside backend work, I've built [linuxcru](https://github.com/colin-110/linux-cru), which started because my laptop's panel is sold as 60 Hz but runs fine at 96, and an autonomous boat for clearing water hyacinth from ponds, which my college funded with ₹30,000.
 
-<img src="assets/numbers.svg" width="100%" alt="60 to 96 Hz with linuxcru; 0 readings lost in FleetOps chaos tests; 98% Recall@5 in Lumen; notes 14.8 s after stopping in Meeting Summarizer; 1,000 robots on about 40% of one core; 17 of 20 chart pages without paid vision calls">
-
-## Robotics
-
-### Water hyacinth collection boat
-
-<table>
-<tr>
-<td width="70%" valign="top">
-
-An autonomous boat that detects floating water hyacinth with a camera and collects it from ponds. It was a college-funded team project (₹30,000), and I designed, built, programmed and tested it in a pond in October 2026.
-
-A patent application is being prepared, so the code and design aren't public yet.
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/Jetson_Orin_Nano-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Jetson Orin Nano"> <img src="https://img.shields.io/badge/Computer_vision-5C3EE8?style=flat-square" alt="Computer vision">
-
-</td>
-<td width="30%" valign="top" align="center">
-  <img src="assets/screens/hyacinth-boat-pond.jpg" width="200" alt="The boat on a pond during testing">
-  <br><sub>Pond test, October 2026</sub>
-</td>
-</tr>
-</table>
-
-### [Self-levelling platform on a line-following robot](https://github.com/colin-110/esp32-self-levelling-platform)
-
-A line-following robot with a servo-mounted platform on top that stays level while it drives, with the ESP32 running each job on its own core.
-
-Instead of using PID, I wrote my own controller that steps the servo towards level in small, bounded steps, and then spent a lot of time tuning it on the real hardware. It took a four-stage filter on the tilt signal, a cap on each servo step and a check that stops correcting once the angle settles before the platform stopped hunting back and forth. I also built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) to compare. PID corrected faster, but my controller held the platform level too.
-
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS"> <img src="https://img.shields.io/badge/MPU6500-6D28D9?style=flat-square" alt="MPU6500">
+<img src="assets/numbers.svg" width="100%" alt="60 to 96 Hz with linuxcru; 30,000 rupees of college funding for the hyacinth boat; 98% Recall@5 in Lumen; notes 14.8 s after stopping in Meeting Summarizer; 0 readings lost in FleetOps chaos tests; 17 of 20 chart pages without paid vision calls">
 
 ## Currently working on
 
@@ -132,6 +102,36 @@ Extracts facts from PDFs, links each one to the page it came from and flags when
 </td>
 </tr>
 </table>
+
+## Hardware
+
+### Water hyacinth collection boat
+
+<table>
+<tr>
+<td width="70%" valign="top">
+
+An autonomous boat that detects floating water hyacinth with a camera and collects it from ponds. It was a college-funded team project (₹30,000), and I designed, built, programmed and tested it in a pond in October 2026.
+
+A patent application is being prepared, so the code and design aren't public yet.
+
+<img src="https://img.shields.io/badge/College_funded-%E2%82%B930%2C000-D97706?style=flat-square" alt="College funded: 30,000 rupees"> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/Jetson_Orin_Nano-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Jetson Orin Nano"> <img src="https://img.shields.io/badge/Computer_vision-5C3EE8?style=flat-square" alt="Computer vision">
+
+</td>
+<td width="30%" valign="top" align="center">
+  <img src="assets/screens/hyacinth-boat-pond.jpg" width="200" alt="The boat on a pond during testing">
+  <br><sub>Pond test, October 2026</sub>
+</td>
+</tr>
+</table>
+
+### [Self-levelling platform on a line-following robot](https://github.com/colin-110/esp32-self-levelling-platform)
+
+A line-following robot with a servo-mounted platform on top that stays level while it drives, with the ESP32 running each job on its own core.
+
+Instead of using PID, I wrote my own controller that steps the servo towards level in small, bounded steps, and then spent a lot of time tuning it on the real hardware. It took a four-stage filter on the tilt signal, a cap on each servo step and a check that stops correcting once the angle settles before the platform stopped hunting back and forth. I also built a [PID version](https://github.com/colin-110/mpu6050-servo-pid-controller) to compare. PID corrected faster, but my controller held the platform level too.
+
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS"> <img src="https://img.shields.io/badge/MPU6500-6D28D9?style=flat-square" alt="MPU6500">
 
 ## Other things I've built
 
