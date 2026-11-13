@@ -44,6 +44,8 @@ linuxcru does that from one number. You type a refresh rate, and it calculates t
 
 Only a small helper runs as root, and the installer is tested against a fake filesystem, so the tests never touch a real boot setup.
 
+I built it so anyone can use it, not just me. It's open source, installs with pipx, and works on Ubuntu, Debian, Linux Mint and other distros that boot with GRUB and initramfs-tools.
+
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Qt_/_PySide6-41CD52?style=flat-square&logo=qt&logoColor=white" alt="Qt / PySide6"> <img src="https://img.shields.io/badge/EDID-F43F5E?style=flat-square" alt="EDID"> <img src="https://img.shields.io/badge/GRUB-6D28D9?style=flat-square&logo=gnu&logoColor=white" alt="GRUB"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 
 </td>
@@ -138,6 +140,7 @@ Instead of using PID, I wrote my own controller that steps the servo towards lev
 
 ## Other things I've built
 
+- [NeetCode and LeetCode sync checker](https://github.com/colin-110/neetcode_leetcode_syncer): a Chrome extension that highlights problems I've already solved on LeetCode but haven't ticked off on NeetCode. I use it most days when I practise.
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
 
