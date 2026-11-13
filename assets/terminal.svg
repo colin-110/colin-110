@@ -1,39 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" role="img" aria-label="Terminal: whoami prints Colin K Thomas, CS student at VIT Chennai. cat interests prints backend systems, linux tooling, robotics. linuxcru calc 96 prints 1920x1080 at 95.999 Hz.">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="250" viewBox="0 0 860 250" role="img" aria-label="Terminal: linuxcru calc 96 prints a 1920x1080 mode at 95.999 Hz with a 227 MHz pixel clock, then linuxcru apply 96 is typed.">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f43f5e"/><stop offset="0.5" stop-color="#a855f7"/><stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
   <style>
-    text { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 17px; }
-    .p { fill: #7ee787; }
-    .d { fill: #79c0ff; }
-    .c { fill: #e6edf3; }
-    .o { fill: #c9d1d9; }
-    .m { fill: #8b949e; }
-    .a { fill: #ffa657; }
-    .t { fill: #8b949e; font-size: 13px; }
+    text { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 14px; }
+    .p { fill: #4ade80; } .d { fill: #60a5fa; } .m { fill: #94a3b8; } .c { fill: #f8fafc; }
+    .o { fill: #cbd5e1; } .a { fill: #fbbf24; } .k { fill: #c084fc; } .w { fill: #fb7185; }
+    .t { fill: #94a3b8; font-size: 12px; }
     .l { animation: show 0.01s linear both; }
-    .l1 { animation-delay: 0.3s; } .l2 { animation-delay: 0.9s; }
-    .l3 { animation-delay: 1.5s; } .l4 { animation-delay: 2.1s; }
-    .l5 { animation-delay: 2.7s; } .l6 { animation-delay: 3.4s; }
-    .l7 { animation-delay: 3.9s; }
-    .cur { animation: show 0.01s linear 3.9s both, blink 1.1s steps(1) 3.9s infinite; }
+    .l1 { animation-delay: 0.3s; } .l2 { animation-delay: 1.1s; } .l3 { animation-delay: 1.3s; }
+    .l4 { animation-delay: 1.5s; } .l5 { animation-delay: 1.7s; } .l6 { animation-delay: 2.6s; }
+    .cur { animation: show 0.01s linear 2.6s both, blink 1.1s steps(1) 2.6s infinite; }
     @keyframes show { from { opacity: 0; } to { opacity: 1; } }
     @keyframes blink { 50% { opacity: 0; } }
   </style>
 
-  <rect x="1" y="1" width="858" height="298" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
-  <path d="M1 13 a12 12 0 0 1 12 -12 h834 a12 12 0 0 1 12 12 v25 h-858 z" fill="#161b22"/>
-  <line x1="1" y1="38" x2="859" y2="38" stroke="#30363d" stroke-width="1"/>
-  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
-  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
-  <circle cx="64" cy="20" r="6" fill="#28c840"/>
-  <text x="430" y="25" text-anchor="middle" class="t">colin@kubuntu: ~</text>
+  <rect x="0" y="0" width="860" height="250" rx="14" fill="url(#edge)"/>
+  <rect x="3" y="3" width="854" height="244" rx="12" fill="#0b1020"/>
+  <path d="M3 15 a12 12 0 0 1 12 -12 h830 a12 12 0 0 1 12 12 v21 h-854 z" fill="#151b2e"/>
+  <circle cx="24" cy="19" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="19" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="19" r="6" fill="#28c840"/>
+  <text x="430" y="23" text-anchor="middle" class="t">colin@kubuntu: ~</text>
 
-  <text x="28" y="76" xml:space="preserve" class="l l1"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c">whoami</tspan></text>
-  <text x="28" y="104" xml:space="preserve" class="l l2 o">Colin K Thomas · CS student @ VIT Chennai</text>
+  <text x="24" y="72" xml:space="preserve" class="l l1"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c">linuxcru calc 96</tspan></text>
+  <text x="24" y="100" xml:space="preserve" class="l l2"><tspan class="a">1920x1080 @ 95.999 Hz</tspan><tspan class="o">  227.00 MHz  108.095 kHz</tspan></text>
+  <text x="24" y="124" xml:space="preserve" class="l l3"><tspan class="k">     horizontal:</tspan><tspan class="o"> 1920 active, 108 front, 48 sync, 24 back = 2100 total</tspan></text>
+  <text x="24" y="148" xml:space="preserve" class="l l4"><tspan class="k">     vertical:  </tspan><tspan class="o"> 1080 active, 10 front, 10 sync, 26 back = 1126 total   (-hsync -vsync)</tspan></text>
+  <text x="24" y="172" xml:space="preserve" class="l l5"><tspan class="w">  ! </tspan><tspan class="o">Pixel clock is 60% above the panel's native mode (142.00 -&gt; 227.00 MHz).</tspan></text>
 
-  <text x="28" y="140" xml:space="preserve" class="l l3"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c">cat interests</tspan></text>
-  <text x="28" y="168" xml:space="preserve" class="l l4 o">backend systems · linux tooling · robotics</text>
-
-  <text x="28" y="204" xml:space="preserve" class="l l5"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c">linuxcru calc 96</tspan></text>
-  <text x="28" y="232" xml:space="preserve" class="l l6"><tspan class="a">1920x1080 @ 95.999 Hz</tspan><tspan class="o">  227.00 MHz  108.095 kHz</tspan></text>
-
-  <text x="28" y="268" xml:space="preserve" class="l l7"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c cur">█</tspan></text>
+  <text x="24" y="214" xml:space="preserve" class="l l6"><tspan class="p">colin@kubuntu</tspan><tspan class="m">:</tspan><tspan class="d">~</tspan><tspan class="m">$ </tspan><tspan class="c">linuxcru apply 96 </tspan><tspan class="c cur">█</tspan></text>
 </svg>
