@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="250" viewBox="0 0 860 250" role="img" aria-label="Hi, I'm Colin. I build backends that survive kill -9, and Linux tools that make 60 Hz screens run at 96.">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="250" viewBox="0 0 860 250" role="img" aria-label="Colin K Thomas. I build backends that survive kill -9, and Linux tools that make 60 Hz screens run at 96.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#ff5f9e">
@@ -45,20 +45,20 @@
   </g>
 
   <g class="sans" fill="#ffffff">
-    <text x="48" y="92" font-size="50" font-weight="800" filter="url(#shadow)" class="rise">Hi, I'm Colin</text>
+    <text x="48" y="92" font-size="48" font-weight="800" filter="url(#shadow)" class="rise">Colin K Thomas</text>
     <text x="48" y="134" font-size="19" font-weight="500" class="rise d1">I build backends that survive <tspan class="mono" font-weight="700" fill="#fef08a">kill -9</tspan>, and Linux tools</text>
     <text x="48" y="160" font-size="19" font-weight="500" class="rise d1">that make 60 Hz screens run at 96.</text>
   </g>
 
   <g class="sans rise d2" font-size="13" font-weight="600" text-anchor="middle" fill="#ffffff">
-    <rect x="48" y="185" width="132" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
-    <text x="114" y="205">⚙ backend systems</text>
-    <rect x="188" y="185" width="116" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
-    <text x="246" y="205">$ linux tooling</text>
-    <rect x="312" y="185" width="92" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
-    <text x="358" y="205">robotics</text>
-    <rect x="412" y="185" width="140" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
-    <text x="482" y="205">CS @ VIT Chennai</text>
+    <rect x="48" y="185" width="124" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
+    <text x="110" y="205">backend systems</text>
+    <rect x="180" y="185" width="108" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
+    <text x="234" y="205">linux tooling</text>
+    <rect x="296" y="185" width="84" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
+    <text x="338" y="205">robotics</text>
+    <rect x="388" y="185" width="136" height="30" rx="15" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-opacity="0.45"/>
+    <text x="456" y="205">CS @ VIT Chennai</text>
   </g>
 
   <!-- monitor that "overclocks" from 60 Hz to 96 Hz -->
