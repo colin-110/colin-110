@@ -104,7 +104,7 @@ Extracts facts from PDFs, links each one to the page it came from and flags when
 <tr>
 <td colspan="2" valign="top">
 
-### [Self-levelling platform on a line-following robot](https://github.com/colin-110/custom-pid-free-stabilization-robot)
+### [Self-levelling platform on a line-following robot](https://github.com/colin-110/esp32-self-levelling-platform)
 
 A line-following robot with a servo-mounted platform on top that stays level while the robot drives. The ESP32 runs the line follower on one core and the platform controller on the other.
 
