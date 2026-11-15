@@ -117,6 +117,8 @@ I built this for friends who aren't technical and needed to turn photos into PDF
 
 ### [Fact Knowledge Layer](https://github.com/colin-110/fact-knowledge-layer)
 
+<a href="https://drive.google.com/file/d/11Ns9VgLIaBC0U2QHDBuwt0iK0OEf-YCN/view?usp=drive_link"><img src="assets/screens/fkl-relationships.jpg" width="49%" alt="Relationships tab: two facts from an earnings presentation flagged as a likely contradiction, with the source PDF page open"></a> <a href="https://drive.google.com/file/d/11Ns9VgLIaBC0U2QHDBuwt0iK0OEf-YCN/view?usp=drive_link"><img src="assets/screens/fkl-ask.jpg" width="49%" alt="Ask tab: an answer about FY24 revenue with the facts used and source evidence"></a>
+
 Extracts facts from PDFs, links each one to the page it came from and flags when two reports disagree. Plain code normalizes currencies and periods, rules settle the clear cases, and only ambiguous pairs go to an LLM.
 
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/Chroma-FF6446?style=flat-square" alt="Chroma"> <img src="https://img.shields.io/badge/PyMuPDF-8B5CF6?style=flat-square" alt="PyMuPDF">
