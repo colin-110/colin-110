@@ -51,8 +51,6 @@ I built it so anyone can use it. It's open source, installs with pipx and works 
 </tr>
 </table>
 
-<img src="assets/terminal.svg" width="100%" alt="linuxcru calc 96 output: 1920x1080 at 95.999 Hz, 227 MHz pixel clock">
-
 ## Projects
 
 <table>
