@@ -40,7 +40,7 @@ Windows has CRU for adding custom refresh rates. On Linux, `xrandr` can't add mo
 
 linuxcru does all of that from one number. It calculates the timings, writes a valid EDID and installs it as a kernel firmware override, on Wayland or X11 and with Secure Boot. Only a small helper runs as root, and every change can be previewed with `--dry-run`.
 
-I built it so anyone can use it. It's open source, installs with pipx and works on Ubuntu, Debian, Linux Mint and other GRUB-based distros.
+I built it so anyone can use it. It's open source, installs with pipx and works on Ubuntu, Debian, Linux Mint and other distros that boot with GRUB and initramfs-tools.
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Qt_/_PySide6-41CD52?style=flat-square&logo=qt&logoColor=white" alt="Qt / PySide6"> <img src="https://img.shields.io/badge/EDID-F43F5E?style=flat-square" alt="EDID"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 
@@ -62,7 +62,7 @@ I built it so anyone can use it. It's open source, installs with pipx and works 
 
 <a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps live dashboard with fleet status and robots on the map"></a>
 
-Monitoring and control for a robot fleet. Readings are acknowledged only after they're committed and robots keep an on-disk outbox, so chaos tests that killed the robots, the API or the broker lost nothing. A shared predictor cuts robot messages by 55%.
+Monitoring and control for a robot fleet. Readings are acknowledged only after they're committed and robots keep an on-disk outbox, so chaos tests that killed the robots, the API or the broker lost nothing. A shared predictor cut robot messages by 55% in the simulator.
 
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white" alt="MQTT"> <img src="https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black" alt="TimescaleDB"> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
 
