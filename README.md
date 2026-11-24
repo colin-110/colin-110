@@ -4,7 +4,7 @@
   <a href="https://www.linkedin.com/in/colin-k-thomas"><img src="https://img.shields.io/badge/LinkedIn-colin--k--thomas-0A66C2?style=flat-square" alt="LinkedIn"></a> <img src="https://img.shields.io/badge/Chennai-India-22C55E?style=flat-square" alt="Chennai, India"> <img src="https://img.shields.io/badge/VIT_Chennai-B.Tech_CSE_2027-7C3AED?style=flat-square" alt="VIT Chennai, B.Tech CSE, 2027">
 </p>
 
-I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I cause those failures on purpose, fix what breaks and write down what I measured.
+I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I cause those failures on purpose, fix what breaks and write down what I measured. The bigger projects also have browser, load and smoke tests, and the smoke tests run against the live sites.
 
 <img src="assets/numbers.svg" width="100%" alt="60 to 96 Hz with linuxcru; 30,000 rupees of college funding for the hyacinth boat; 98% Recall@5 in Lumen; notes 14.8 s after stopping in Meeting Summarizer; 0 readings lost in FleetOps chaos tests; 17 of 20 chart pages without paid vision calls">
 
@@ -40,7 +40,7 @@ Windows has CRU for adding custom refresh rates. On Linux, `xrandr` can't add mo
 
 linuxcru does all of that from one number. It calculates the timings, writes a valid EDID and installs it as a kernel firmware override, on Wayland or X11 and with Secure Boot. Only a small helper runs as root, and every change can be previewed with `--dry-run`.
 
-I built it so anyone can use it. It's open source, installs with pipx and works on Ubuntu, Debian, Linux Mint and other distros that boot with GRUB and initramfs-tools.
+I built it so anyone can use it. It's open source, installs with pipx and works on Ubuntu, Debian, Linux Mint and other distros that boot with GRUB and initramfs-tools. CI fails if tests cover less than 90% of the code, and each release goes through a manual test plan on real hardware.
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Qt_/_PySide6-41CD52?style=flat-square&logo=qt&logoColor=white" alt="Qt / PySide6"> <img src="https://img.shields.io/badge/EDID-F43F5E?style=flat-square" alt="EDID"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 
@@ -60,9 +60,9 @@ I built it so anyone can use it. It's open source, installs with pipx and works 
 ### [FleetOps](https://github.com/colin-110/robot-fleet-platform)
 <sub><a href="https://robot-fleet-platform.vercel.app">Live demo</a> · <a href="https://github.com/colin-110/robot-fleet-platform">Code</a></sub>
 
-<a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps live dashboard with fleet status and robots on the map"></a>
+<a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps dashboard with fleet status, alarms and 40 robots on the map"></a>
 
-Monitoring and control for a robot fleet. Readings are acknowledged only after they're committed and robots keep an on-disk outbox, so chaos tests that killed the robots, the API or the broker lost nothing. A shared predictor cut robot messages by 55% in the simulator.
+Monitoring and control for a robot fleet. Readings are acknowledged only after they're committed and robots keep an on-disk outbox, so chaos tests that killed the robots, the API or the broker lost nothing. A shared predictor cut robot messages by 55% in the simulator, and one API process handled 1,000 robots on 35% of a CPU core. 942 tests run on every push.
 
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white" alt="MQTT"> <img src="https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black" alt="TimescaleDB"> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
 
@@ -88,7 +88,7 @@ A self-hosted document assistant that answers with citations. Hybrid search with
 
 <a href="https://meeting-summarizer-recorder.vercel.app"><img src="assets/screens/meeting-summarizer.jpg" alt="Meeting Summarizer upload and record page"></a>
 
-Turns a recording into a transcript, a summary, decisions and action items. Jobs run exactly once on a SQLite queue with leases and heartbeats instead of Redis and Celery, and long meetings are summarized while they're still being recorded.
+Turns a recording into a transcript, a summary, decisions and action items. Jobs run exactly once on a SQLite queue with leases and heartbeats instead of Redis and Celery, and long meetings are summarized while they're still being recorded. A smoke test runs against the live app every day.
 
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/Whisper-10A37F?style=flat-square" alt="Whisper"> <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg">
 
@@ -156,9 +156,10 @@ A Chrome extension that highlights problems I've ticked off on NeetCode but neve
 
 - [Robot kinematics simulator](https://github.com/colin-110/robot-kinematics-ik-simulator): forward and inverse kinematics for a 6-DOF arm, with a live 3D view
 - [Algal bloom forecasting](https://github.com/colin-110/hab_project_ml): an XGBoost model that predicts harmful algal blooms from satellite and climate data
+- [Hybrid intrusion detection](https://github.com/colin-110/Hybrid_IDS_ml_crypto): a Random Forest for known attacks and an Isolation Forest for unusual traffic, trained on UNSW-NB15 and run on live Windows network activity
 
 ## Tools
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square" alt="SQL"> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white" alt="MQTT"> <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery"><br>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black" alt="TimescaleDB"> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis"> <img src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant"> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"><br>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square" alt="AWS"> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS">
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright"> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square" alt="AWS"> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"> <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32"> <img src="https://img.shields.io/badge/FreeRTOS-2E7D32?style=flat-square" alt="FreeRTOS">
