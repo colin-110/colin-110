@@ -18,7 +18,9 @@ Mostly backend work in Python. I like finding out what breaks.
 <tr>
 <td valign="top">
 
-**Water hyacinth boat**: finds water hyacinth with a camera and collects it from ponds. Funded by my college. Code private while a patent application is prepared.
+**Water hyacinth boat** · **₹30,000 college funding**
+
+Finds water hyacinth with a camera and collects it from ponds. I designed, built and programmed it. Code private while a patent application is prepared.
 
 </td>
 <td valign="top">
