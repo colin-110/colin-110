@@ -4,15 +4,13 @@ CS at VIT Chennai, class of 2027 · Kerala · [LinkedIn](https://www.linkedin.co
 
 Mostly backend work in Python. I like finding out what breaks.
 
-### Now
-
 <table>
 <tr>
 <td width="50%" valign="top" align="center">
 <img src="assets/screens/hyacinth-boat-pond.jpg" width="268" alt="The boat on a pond during testing">
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/colin-110/linux-cru#installation"><img src="https://raw.githubusercontent.com/colin-110/linux-cru/main/docs/images/main-window.png" alt="linuxcru main window with a 96 Hz mode added"></a>
+<a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps dashboard with fleet status, alarms and robots on the map"></a>
 </td>
 </tr>
 <tr>
@@ -25,24 +23,19 @@ Finds water hyacinth with a camera and collects it from ponds. I designed, built
 </td>
 <td valign="top">
 
-**[linuxcru](https://github.com/colin-110/linux-cru)**: custom refresh rates on Linux. Runs my 60 Hz laptop panel at 96 Hz.
-
-**[Install it →](https://github.com/colin-110/linux-cru#installation)** <sub>one pipx command</sub>
-
-</td>
-</tr>
-</table>
-
-### Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://robot-fleet-platform.vercel.app"><img src="assets/screens/fleetops.jpg" alt="FleetOps dashboard with fleet status, alarms and robots on the map"></a>
-
 **[FleetOps](https://github.com/colin-110/robot-fleet-platform)**: a live fleet of 20 simulated robots. Kill any part mid-stream and no readings are lost.
 
 **[Open the live fleet →](https://robot-fleet-platform.vercel.app)** <sub>login is pre-filled</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/colin-110/linux-cru#installation"><img src="https://raw.githubusercontent.com/colin-110/linux-cru/main/docs/images/main-window.png" alt="linuxcru main window with a 96 Hz mode added"></a>
+
+**[linuxcru](https://github.com/colin-110/linux-cru)**: custom refresh rates on Linux. Runs my 60 Hz laptop panel at 96 Hz.
+
+**[Install it →](https://github.com/colin-110/linux-cru#installation)** <sub>one pipx command</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://lumen-three-nu.vercel.app"><img src="assets/screens/lumen.jpg" alt="Lumen comparing an invoice with a services agreement, with citations"></a>
