@@ -1,7 +1,7 @@
 <img src="assets/banner.svg" width="100%" alt="Colin K Thomas. I build backends that survive kill -9, Linux tools that make 60 Hz screens run at 96, and a boat that clears water hyacinth from ponds.">
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/colin-k-thomas"><img src="https://img.shields.io/badge/LinkedIn-colin--k--thomas-0A66C2?style=flat-square" alt="LinkedIn"></a> <img src="https://img.shields.io/badge/Chennai-India-22C55E?style=flat-square" alt="Chennai, India"> <img src="https://img.shields.io/badge/VIT_Chennai-B.Tech_CSE_2027-7C3AED?style=flat-square" alt="VIT Chennai, B.Tech CSE, 2027">
+  <a href="https://www.linkedin.com/in/colin-k-thomas"><img src="https://img.shields.io/badge/LinkedIn-colin--k--thomas-0A66C2?style=flat-square" alt="LinkedIn"></a> <img src="https://img.shields.io/badge/Kerala-India-22C55E?style=flat-square" alt="Kerala, India"> <img src="https://img.shields.io/badge/VIT_Chennai-B.Tech_CSE_2027-7C3AED?style=flat-square" alt="VIT Chennai, B.Tech CSE, 2027">
 </p>
 
 I'm a computer science student at VIT Chennai. Most of what I write is backend code in Python, and the part I enjoy most is working out what happens when things fail: a broker restarting mid-stream, a worker dying halfway through a job, an API running out of quota. I cause those failures on purpose, fix what breaks and write down what I measured. The bigger projects also have browser, load and smoke tests, and the smoke tests run against the live sites.
