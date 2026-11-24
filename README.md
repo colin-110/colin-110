@@ -2,7 +2,7 @@
 
 CS at VIT Chennai, class of 2027 · Kerala · [LinkedIn](https://www.linkedin.com/in/colin-k-thomas)
 
-Mostly backend work in Python. I like finding out what breaks.
+Backend systems and robotics, mostly in Python and C++. I like finding out what breaks.
 
 <table>
 <tr>
@@ -80,4 +80,4 @@ Finds water hyacinth with a camera and collects it from ponds. I designed, built
 
 ### Stack
 
-Python, C++, TypeScript, SQL · FastAPI, PostgreSQL, Redis, MQTT · Docker, AWS, GitHub Actions · ESP32
+Python, C++, TypeScript, SQL · FastAPI, PostgreSQL, Redis, MQTT · Docker, AWS, GitHub Actions · ESP32, FreeRTOS, Jetson
